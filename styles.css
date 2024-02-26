@@ -30,6 +30,8 @@ html, body {
 a {
     text-decoration: none;
     transition: 0.3s;
+
+
     
 }
 
@@ -82,14 +84,13 @@ nav {
 }
 
 .nav__links a {
-    white-space: nowrap;
-    font-weight: 500;
-    color: var(--text-dark);
+  white-space: nowrap;
+  font-weight: 500;
+  color: var(--text-dark);
 }
 
 .nav__links a:hover {
-    color: var(--white);
-
+  color: var(--white);
 }
 
 .nav__menu__btn {
@@ -242,6 +243,10 @@ nav {
     font-weight: 600;
     color: var(--text-dark);
 }
+
+.banner__card a:hover {
+  color: var(--white)
+}
   
 .banner__content {
     position: absolute;
@@ -351,7 +356,7 @@ nav {
       line-height: 4rem;
     }
   
-    .banner {
+  .banner {
       display: grid;
       grid-template-columns:
         minmax(1rem, 1fr)
@@ -373,4 +378,98 @@ nav {
       padding: 0.75rem 4rem;
       gap: 4rem;
     }
+  }
+
+  .contact-title {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  #contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 50vh;
+  }
+
+  .contact-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: (250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+    
+  }
+  
+  .contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+  }
+  
+  .contact-info p {
+    font-size: larger;
+  }
+
+  .contact-icon {
+    cursor: default;
+    height: 2rem;
+  }
+  
+  .email-icon {
+    height: 2.5rem;
+  }
+
+  #contact a {
+    text-decoration: none;
+    color: var(--text-dark);
+
+  }
+  #contact a:hover {
+    color: grey;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+  }
+
+  .ul-links {
+    list-style: none;
+    text-decoration: none;
+    font-size: 1rem;
+    gap:2rem;
+    display: flex;
+  }
+
+  .links-footer a {
+    white-space: nowrap;
+    font-weight: 500;
+    color: var(--text-dark);
+  }
+
+  .links-footer a:hover {
+    color: grey;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+  }
+
+  .div-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+  }
+
+  footer {
+    height: 26vh;
+    margin: 0 1rem;
+  }
+  
+  footer p {
+    text-align: center;
+    color: rgb(85, 85, 85);
   }
