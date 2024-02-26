@@ -18,10 +18,10 @@
                     </a>
                 </div>
                 <ul class="nav__links" id="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Sobre Nós</a></li>
-                    <li><a href="#">Reservas</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#" onclick="toggleMenu()">Home</a></li>
+                    <li><a href="#about" onclick="toggleMenu()">Sobre Nós</a></li>
+                    <li><a href="#reservation" onclick="toggleMenu()">Reservas</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
                 </ul>
                 <div class="nav__menu__btn" id="menu-btn">
                     <span><i class="ri-menu-line"></i></span>
@@ -30,7 +30,7 @@
         
             <div class="h-container">
                 <div class="h-image"></div>
-                <div class="h-content">
+                <div class="h-content" id="about">
                     <h1>Discover</h1>
                     <h2>Worldwide</h2>
                     <p>Somos apaixonados por descobrir as maravilhas do nosso mundo diversificado
@@ -65,13 +65,44 @@
                 <a href="#">Leia Mais</a>
             </div>
 
-            <div class="banner__card">
+            <div class="banner__card" id="reservation">
                     <h4>Reserve Agora</h4>
                     <p>Garanta sua viagem de modo seguro e confortável.</p>
                     <a href="#">Leia Mais</a>
             </div>
         </div>
 
+        <section id="contact">
+            <h1 class="contact-title">Entre em Contato</h1>
+            <div class="contact-upper-container">
+                <div class="contact-info">
+                    <img src="./assets/email.png" alt="Email icon"
+                    class="icon contact-icon email-icon"
+                    />
+                    <p><a href="mailto:giovananedo@gmail.com">giovananedo@gmail.com</a></p>
+                </div>
+                <div class="contact-info">
+                    <img src="./assets/linkedin.png" alt="Github icon"
+                    class="icon contact-icon"
+                    />
+                    <p><a href="https://www.linkedin.com/in/giovana-valim-a64b47234/">LinkedIn</a></p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="div-footer">
+                <div class="links-footer">
+                    <ul class="ul-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">Sobre Nós</a></li>
+                        <li><a href="#reservation">Reservas</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p>Copyright &#169; 2024 Giovana Valim</p>
+        </footer>
         <script src="https://unpkg.com/scrollreveal"></script>
         <script src="main.js"></script>
     </body>
